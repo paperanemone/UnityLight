@@ -26,6 +26,6 @@ public class SizeIncrease : MonoBehaviour
             _currentScale = 1;
         }
 
-        transform.localScale += new Vector3(_speed * Time.deltaTime, _speed * Time.deltaTime, _speed * Time.deltaTime);
+        transform.localScale += Vector3.one * _speed * Time.deltaTime;
     }
 }
